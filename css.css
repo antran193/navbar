@@ -1,0 +1,94 @@
+.navbar{
+    width: 200px;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding-left: 5px;
+}
+.fa{
+    color: rgb(207, 200, 200);;
+    margin: 10px;
+}
+button{
+    background-color: unset;
+    border: unset;
+    color: rgb(207, 200, 200);
+    width: 170px;
+}
+a{
+    color: rgb(207, 200, 200);;
+    text-decoration: none;
+    margin: 10px 0;
+    padding-left:10px ;
+}
+.admin{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.icon{
+    margin: 5px;
+}
+h4{
+    text-align: start;
+    padding-left: 20px ;
+    font-size: 10px;
+    color: rgb(161, 161, 161);
+}
+button{
+    text-align: start;
+    cursor: pointer;
+}
+
+div ul a{
+    font-size: 10px;
+    color: rgb(207, 200, 200);;
+    padding: 0;
+}
+.gach{
+    display: block;
+    height: 1px;
+    width: 150px;
+    background-color: rgb(207, 200, 200);
+    margin:  0 auto;
+}
+i.fa-angle-right{
+    float: right;
+}
+i.fa-cog ,i.fa-wrench , i.fa-folder{
+    float: left;
+}
+i.fa-cog::before ,i.fa-wrench::before , i.fa-folder::before{
+    padding-right: 10px;
+}
+
+button:hover, button:hover i,a:hover{
+    color: white;
+}
+.drolistcom , .drolistuti , .drolistpage{
+    position: relative;
+    display: inline-block;
+}
+.listuti , .listpage , .listcom{
+    position: absolute;
+    display: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    left: 10px;
+    width: 85%;
+}
+.show{
+    display: block;
+}
+.listuti>a , .listpage>a, .listcom>a{
+    display: block;
+    color: black;
+}
