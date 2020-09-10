@@ -42,6 +42,10 @@ h4{
     font-size: 10px;
     color: rgb(161, 161, 161);
 }
+button:focus{
+    border: none;
+    outline: none;
+}
 button{
     text-align: start;
     cursor: pointer;
@@ -76,7 +80,7 @@ button:hover, button:hover i,a:hover{
     position: relative;
     display: inline-block;
 }
-.listuti , .listpage , .listcom{
+.listuti , .listpage , .listcomcl{
     position: absolute;
     display: none;
     background-color: white;
@@ -88,7 +92,7 @@ button:hover, button:hover i,a:hover{
 .show{
     display: block;
 }
-.listuti>a , .listpage>a, .listcom>a{
+.listuti>a , .listpage>a, .listcomcl>a{
     display: block;
     color: black;
 }
