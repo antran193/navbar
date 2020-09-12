@@ -1,16 +1,21 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
 .navbar{
     width: 200px;
     height: 100%;
     background-color: blue;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    /* display: flex;
+    flex-direction: column; */
     position: fixed;
 }
+/* .navbar{
+    position: relative;
+} */
 ul{
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    padding-left: 5px;
+    padding: 20px 5px;
 }
 .fa{
     color: rgb(207, 200, 200);;
@@ -27,8 +32,10 @@ a{
     text-decoration: none;
     margin: 10px 0;
     padding-left:10px ;
+    display: block;
 }
 .admin{
+    padding: 20px auto;
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
@@ -48,6 +55,8 @@ button:focus{
 }
 button{
     text-align: start;
+}
+button:hover{
     cursor: pointer;
 }
 
@@ -65,6 +74,11 @@ div ul a{
 }
 i.fa-angle-right{
     float: right;
+    display: block;
+}
+i.fa-angle-down{
+    float: right;
+    display: none;
 }
 i.fa-cog ,i.fa-wrench , i.fa-folder{
     float: left;
@@ -76,23 +90,55 @@ i.fa-cog::before ,i.fa-wrench::before , i.fa-folder::before{
 button:hover, button:hover i,a:hover{
     color: white;
 }
-.drolistcom , .drolistuti , .drolistpage{
-    position: relative;
+.drolist{
+    /* position: relative; */
     display: inline-block;
 }
-.listuti , .listpage , .listcomcl{
-    position: absolute;
+.drocontain{
+    /* position: absolute; */
     display: none;
     background-color: white;
     border: 1px solid black;
     border-radius: 5px;
-    left: 10px;
+    margin-left: 10px;
     width: 85%;
 }
-.show{
-    display: block;
-}
-.listuti>a , .listpage>a, .listcomcl>a{
+/* .active {
+    background-color: green;
+    color: white;
+} */
+.drocontain>a{
     display: block;
     color: black;
+    padding-left: 20px ;
+    font-size: 15px;
+}
+.opennavdiv{
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    display: none;
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+}
+.closenavdiv{
+    display: block;
+}
+.closenav{
+    margin: 20px auto;
+}
+
+i.aaa{
+    float: none;
+}
+.opennav , .closenav{
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(20, 19, 19);
+    background-color: rgba(190, 184, 184, 0.247);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <section class="navbar">
+    <section class="navbar" id="navbarid">
         <ul>
             <a class="admin" href="#">
                 <i class="icon icon-smile"></i>SB ADMIN
@@ -21,26 +21,27 @@
             <div>
                 <h4>INTERFACE</h4>
                 <ul>
-                    <div id="drolistcom" class="drolistcom">
+                    <div >
 
-                        <button class="drocom1" onclick="drocom()">
+                        <button onclick="change()"  class="drolist">
                             <i class="fa fa-cog">Components</i>
-                            <i class="fa fa-angle-right"></i>
+                            <i id="right" class="fa fa-angle-right"></i>
+                            <i id="left" class="fa fa-angle-down"></i>
                         </button>
-
-                        <div id="listcom" class="listcomcl">
+                        <div id="listcom" class="drocontain">
                             <a href="#">Buttons</a>
                             <a href="#">Cards</a>
                         </div>
                     </div>
-                    <div class="drolistuti">
+                    <div  >
 
-                        <button onclick="drouti()">
+                        <button  class="drolist">
                             <i class="fa fa-wrench">Utilities</i>
                             <i class="fa fa-angle-right"></i>
+                            <i class="fa fa-angle-down"></i>
                         </button>
 
-                        <div class="listuti">
+                        <div id="listuti" class="drocontain">
                             <a href="#">Colors</a>
                             <a href="#">Borders</a>
                             <a href="#">Animatin</a>
@@ -54,14 +55,14 @@
             <div>
                 <h4>ADDONS</h4>
                 <ul>
-                    <div class="drolistpage">
-                        <a onclick="dropage()" href="#">
-                            <button>
-                                <i class="fa fa-folder">pages</i>
-                                <i class="fa fa-angle-right"></i>
-                            </button>
-                        </a>
-                        <div class="listpage">
+                    <div >
+                        <button class="drolist">
+                            <i class="fa fa-folder">pages</i>
+                            <i class="fa fa-angle-right"></i>
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+
+                        <div class="drocontain">
                             <a href="#">Login</a>
                             <a href="#">Register</a>
                             <a href="#">Forgot password</a>
@@ -81,13 +82,14 @@
                 </ul>
             </div>
             <div class="gach"></div>
-            <div>
-                <button><i class="fa fa-angle-left closenav"></i></button>
-                <button><i class="fa fa-angle-right opennav"></i></button>
+            <div  id="closenavdivid">
+                <button onclick="close1()" class="closenav"><i class="fa fa-angle-left"></i></button>
             </div>
         </ul>
-
     </section>
+    <div  class="opennavdiv" id="opennavdivid">
+        <button onclick="open1()" class="opennav"><i class="fa fa-angle-right aaa"></i></button>
+    </div>
     <script src="./js.js"></script>
 </body>
 

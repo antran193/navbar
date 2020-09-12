@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav nav-pills nav-stacked panel-group " id="accordion" data-spy="affix" data-offset-top="605">
+
+
+            <!--<li class="active"><a href="#section1">Section 1</a></li>
+              <li><a href="#section2">Section 2</a></li>
+              <li><a href="#section3">Section 3</a></li>-->
+
+            <li class="panel" style="margin-top: 0px">
+                <a href="javascript:;" data-toggle="collapse" data-target="#demo1" data-parent="#accordion"
+                    style="margin-left: 0px; margin-top:">
+                    <i class="fa fa-calendar" style="margin-right:10px;"></i> Planning
+                    <i class="fa fa-angle-left"></i><!-- ✎ -->
+                </a>
+                <button>
+                    <i class="fa fa-angle-right"></i>
+                </button>
+
+                <ul id="demo1" class="collapse">
+
+                    <li style="margin-left: 0px"><span class="thumbnail"
+                            style="display:inline;border: 0px solid;background-color:#21252d;color:white;font-size:9px;margin-right:  12px;">
+                            YE
+                        </span><a ui-sref="">Yearly</a></li>
+                    <br>
+                    <li style="margin-left: 0px"><span class="thumbnail"
+                            style="display:inline;border: 0px solid;background-color:#21252d;color:white;font-size:9px;margin-right:  12px;">
+                            MO
+                        </span><a ui-sref="">Monthly</a></li>
+
+                </ul>
+            </li>
+
+
+
+    <script>
+        $('a').on('click', function (e) {
+            $(this).find('[class*="angle"]').toggleClass('fa-angle-left fa-angle-down');
+        });
+
+        $('.go').on('click', function (e) {
+            $(this).css({
+                // transform: 'translateX(-195px)',
+                transition: 'transform .5s'
+            });
+        });
+        
+        $('button').on('click', function (e) {
+            $(this).find('[class*="angle"]').toggleClass('fa-angle-right fa-angle-down');
+        });
+
+        $('.go').on('click', function (e) {
+            $(this).css({
+                // transform: 'translateX(-195px)',
+                transition: 'transform .5s'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
