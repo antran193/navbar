@@ -4,19 +4,21 @@
 
 var dro = document.getElementsByClassName('drolist');
 for (var i = 0; i < dro.length; i++) {
-    dro[i].addEventListener("click", function () {
-        // this.classList.toggle("active");
-        var drocontent = this.nextElementSibling;
-        if (drocontent.style.display === "block") {
-            drocontent.style.display = "none";
+    dro[i].addEventListener("click", drolist);
+    dro[i].addEventListener("click",change1) ;
 
-        }
-        else {
-            drocontent.style.display = "block";
+}
+function drolist() {
+    // this.classList.toggle("active");
+    var drocontent = this.nextElementSibling;
+    if (drocontent.style.display === "block") {
+        drocontent.style.display = "none";
 
-        }
-    });
+    }
+    else {
+        drocontent.style.display = "block";
 
+    }
 }
 
 // var drolist = dro.getElementsByClassName('drocontain');
@@ -32,20 +34,35 @@ for (var i = 0; i < dro.length; i++) {
 //     })
 // }
 
-function change() {
-    var x = document.getElementById('right');
-    var y = document.getElementById('left');
-    // var x = document.getElementsByClassName("fa-angle-right");
-    // var y = document.getElementsByClassName("fa-angle-down");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-        y.style.display = "none";
+function change1() {
+    // var x = document.getElementById('right');
+    // var y = document.getElementById('left');
+    // var x = document.getElementsByClassName("fa fa-angle-right")[a];
+    // var y = document.getElementsByClassName("fa fa-angle-down")[a];
+    // x.style.display="block";
+    // y.style.display="none";
+    // if (x.style.display === "none") {
+    //     x.style.display = "block";
+    //     y.style.display = "none";
+    // }
+    // else {
+    //     x.style.display = "none";
+    //     y.style.display = "block";
+    // }
+    var iconright=this.childNodes[3];
+    var icondown=this.childNodes[5];
+    if(iconright.style.display==="none")
+    {
+        iconright.style.display = "block";
+        icondown.style.display = "none";
     }
     else {
-        x.style.display = "none";
-        y.style.display = "block";
+        iconright.style.display = "none";
+        icondown.style.display = "block";
     }
 }
+
+
 function close1() {
   
     var y = document.getElementById('navbarid')
